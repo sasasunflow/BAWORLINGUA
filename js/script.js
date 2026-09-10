@@ -754,6 +754,65 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Helper function for natural Web Speech Synthesis TTS
+    function playTextToSpeech(text, langCode) {
+      if (!('speechSynthesis' in window)) return;
+
+      // 1. Stop any currently active audio immediately to prevent voice overlap
+      window.speechSynthesis.cancel();
+
+      const cleanText = text ? text.trim() : '';
+      // 2. Do not read empty text
+      if (!cleanText) return;
+
+      // 3. Map language code to BCP-47 language tag
+      // - Indonesian ('id') -> 'id-ID'
+      // - English ('en') -> 'en-US'
+      // - Banyumasan ('bny') -> fallback to 'id-ID' (never use English voice for Banyumasan)
+      let targetLangTag = 'id-ID';
+      if (langCode === 'en') {
+        targetLangTag = 'en-US';
+      } else {
+        targetLangTag = 'id-ID';
+      }
+
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = targetLangTag;
+      utterance.rate = 0.95; // Natural speed rate (0.9 - 1.0)
+      utterance.pitch = 1.0; // Normal pitch
+      utterance.volume = 1.0;
+
+      // 4. Select best available browser voice based on lang
+      const voices = window.speechSynthesis.getVoices();
+      if (voices && voices.length > 0) {
+        let matchedVoice = null;
+        if (langCode === 'en') {
+          matchedVoice = voices.find(v => v.lang === 'en-US' || v.lang === 'en_US') ||
+                         voices.find(v => v.lang === 'en-GB' || v.lang === 'en_GB') ||
+                         voices.find(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+        } else {
+          matchedVoice = voices.find(v => v.lang === 'id-ID' || v.lang === 'id_ID') ||
+                         voices.find(v => v.lang && v.lang.toLowerCase().startsWith('id'));
+        }
+
+        if (matchedVoice) {
+          utterance.voice = matchedVoice;
+        }
+      }
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Pre-load voices if supported by browser
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.getVoices();
+      if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = () => {
+          window.speechSynthesis.getVoices();
+        };
+      }
+    }
+
     // 3. Action Buttons (Copy, Audio Feedback, Share)
     const copyInputBtn = document.getElementById('btn-copy-input');
     const copyOutputBtn = document.getElementById('btn-copy-output');
@@ -778,11 +837,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (audioOutputBtn) {
       audioOutputBtn.addEventListener('click', () => {
-        const textToSpeak = (transOutputArea && transOutputArea.value.trim()) || (transInputArea && transInputArea.value.trim());
-        if (textToSpeak && 'speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(textToSpeak);
-          utterance.lang = 'id-ID';
-          window.speechSynthesis.speak(utterance);
+        let textToSpeak = '';
+        let targetLangCode = 'bny';
+
+        if (transOutputArea && transOutputArea.value.trim() !== '') {
+          textToSpeak = transOutputArea.value.trim();
+          targetLangCode = langToSelect ? langToSelect.value : 'bny';
+        } else if (transInputArea && transInputArea.value.trim() !== '') {
+          textToSpeak = transInputArea.value.trim();
+          targetLangCode = langFromSelect ? langFromSelect.value : 'id';
+        }
+
+        if (textToSpeak) {
+          playTextToSpeech(textToSpeak, targetLangCode);
+        } else {
+          // If text is empty, cancel any playing audio
+          if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+          }
         }
       });
     }
@@ -808,10 +880,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const parentItem = btn.closest('.example-item');
         if (parentItem) {
           const bnyText = parentItem.querySelector('.ex-bny');
-          if (bnyText && 'speechSynthesis' in window) {
-            const utterance = new SpeechSynthesisUtterance(bnyText.textContent);
-            utterance.lang = 'id-ID';
-            window.speechSynthesis.speak(utterance);
+          if (bnyText && bnyText.textContent.trim()) {
+            playTextToSpeech(bnyText.textContent.trim(), 'bny');
           }
         }
       });
