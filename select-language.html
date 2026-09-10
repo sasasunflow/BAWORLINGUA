@@ -1,272 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pilih Bahasa / Choose Language - BaworLingua</title>
-    <meta name="description" content="Pilih bahasa antarmuka utama BaworLingua. Select your preferred language for the BaworLingua interface.">
+    <meta
+      name="description"
+      content="Pilih bahasa antarmuka utama BaworLingua. Select your preferred language for the BaworLingua interface."
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <link rel="icon" type="image/png" href="assets/logo/logo.png" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body data-lang="id">
-
+  <body data-lang="id">
     <!-- NAVBAR SECTION (REUSED FROM HOMEPAGE, NO ACTIVE MENU UNDERLINE) -->
     <header class="navbar" id="main-navbar">
-        <div class="navbar-container">
-
-            <!-- Brand Logo & Title (Left) -->
-            <a href="index.html" class="brand" id="nav-brand">
-                <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="brand-logo" id="brand-logo-img">
-                <div class="brand-info">
-                    <span class="brand-title">BaworLingua</span>
-                    <div class="brand-subtitle-bilingual bilingual-text">
-                        <span class="text-id">Sinau Basa, Jelajah Banyumas</span>
-                        <span class="text-en">Learn the Language, Explore Banyumas</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Menu Navigation (Center - No active underline on any menu) -->
-            <nav id="primary-navigation">
-                <ul class="nav-menu">
-                    <li>
-                        <a href="index.html" class="nav-link" id="nav-item-beranda">
-                            <span class="nav-bilingual bilingual-text">
-                                <span class="text-id">Beranda</span>
-                                <span class="text-en">Home</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="belajar.html" class="nav-link" id="nav-item-belajar">
-                            <span class="nav-bilingual bilingual-text">
-                                <span class="text-id">Belajar</span>
-                                <span class="text-en">Learn</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link" id="nav-item-wisata">
-                            <span class="nav-bilingual bilingual-text">
-                                <span class="text-id">Wisata</span>
-                                <span class="text-en">Tourism</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link" id="nav-item-kuliner">
-                            <span class="nav-bilingual bilingual-text">
-                                <span class="text-id">Kuliner</span>
-                                <span class="text-en">Culinary</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link" id="nav-item-terjemahan">
-                            <span class="nav-bilingual bilingual-text">
-                                <span class="text-id">Terjemahan</span>
-                                <span class="text-en">Translate</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Action Buttons & Language Selector (Right) -->
-            <div class="nav-actions">
-                <!-- Language Dropdown Button -->
-                <div class="lang-selector" id="lang-selector-btn" role="button" aria-label="Pilih Bahasa Utama">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                    <span id="lang-label">ID</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                </div>
-
-                <!-- Login Button -->
-                <a href="#" class="btn-login" id="btn-login">
-                    <span class="login-bilingual bilingual-text">
-                        <span class="text-id">Masuk</span>
-                        <span class="text-en">Login</span>
-                    </span>
-                </a>
+      <div class="navbar-container">
+        <!-- Brand Logo & Title (Left) -->
+        <a href="index.html" class="brand" id="nav-brand">
+          <img
+            src="assets/logo/logo.png"
+            alt="Logo BaworLingua"
+            class="brand-logo"
+            id="brand-logo-img"
+          />
+          <div class="brand-info">
+            <span class="brand-title">BaworLingua</span>
+            <div class="brand-subtitle-bilingual bilingual-text">
+              <span class="text-id">Sinau Basa, Jelajah Banyumas</span>
+              <span class="text-en">Learn the Language, Explore Banyumas</span>
             </div>
+          </div>
+        </a>
 
+        <!-- Menu Navigation (Center - No active underline on any menu) -->
+        <nav id="primary-navigation">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link" id="nav-item-beranda">
+                <span class="nav-bilingual bilingual-text">
+                  <span class="text-id">Beranda</span>
+                  <span class="text-en">Home</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="belajar.html" class="nav-link" id="nav-item-belajar">
+                <span class="nav-bilingual bilingual-text">
+                  <span class="text-id">Belajar</span>
+                  <span class="text-en">Learn</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" id="nav-item-wisata">
+                <span class="nav-bilingual bilingual-text">
+                  <span class="text-id">Wisata</span>
+                  <span class="text-en">Tourism</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" id="nav-item-kuliner">
+                <span class="nav-bilingual bilingual-text">
+                  <span class="text-id">Kuliner</span>
+                  <span class="text-en">Culinary</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" id="nav-item-terjemahan">
+                <span class="nav-bilingual bilingual-text">
+                  <span class="text-id">Terjemahan</span>
+                  <span class="text-en">Translate</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Action Buttons & Language Selector (Right) -->
+        <div class="nav-actions">
+          <!-- Language Dropdown Button -->
+          <div
+            class="lang-selector"
+            id="lang-selector-btn"
+            role="button"
+            aria-label="Pilih Bahasa Utama"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              ></path>
+            </svg>
+            <span id="lang-label">ID</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <!-- Login Button -->
+          <a href="#" class="btn-login" id="btn-login">
+            <span class="login-bilingual bilingual-text">
+              <span class="text-id">Masuk</span>
+              <span class="text-en">Login</span>
+            </span>
+          </a>
         </div>
+      </div>
     </header>
 
     <!-- SELECT LANGUAGE MAIN SECTION -->
     <main class="select-lang-section" id="select-lang-main">
-        
-        <!-- HERO / BACKGROUND AREA WITH BANYUMAS ILLUSTRATION -->
-        <div class="select-lang-hero" id="select-lang-hero">
-            <div class="select-lang-container">
-                <div class="select-lang-hero-grid">
-                    
-                    <!-- Left Column: Title & Description (Left-aligned, ~15-20% from left) -->
-                    <div class="select-lang-text-col">
-                        <div class="select-lang-title-bilingual">
-                            <h1 class="select-title-id">Pilih Bahasa</h1>
-                            <span class="select-title-en">Choose Your Language</span>
-                        </div>
-                        <div class="select-lang-dec-line"></div>
-                        <div class="select-lang-desc-bilingual">
-                            <p class="select-desc-id">Pilih bahasa utama yang akan digunakan sebagai tampilan antarmuka BaworLingua.</p>
-                            <p class="select-desc-en">Select your preferred language for the BaworLingua interface.</p>
-                        </div>
-                    </div>
-
-                    <!-- Center Column: Mascot Bawor (Horizontally Centered in Hero) -->
-                    <div class="select-lang-mascot-col">
-                        <div class="select-mascot-wrapper">
-                            <img src="assets/mascot/Bawor_Welcome.png" alt="Mascot Bawor Welcome" class="select-mascot-img-center" id="select-bawor-img">
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Illustration Visual Space -->
-                    <div class="select-lang-bg-space"></div>
-
-                </div>
+      <!-- HERO / BACKGROUND AREA WITH BANYUMAS ILLUSTRATION -->
+      <div class="select-lang-hero" id="select-lang-hero">
+        <div class="select-lang-container">
+          <div class="select-lang-hero-grid">
+            <!-- Left Column: Title & Description (Left-aligned, ~15-20% from left) -->
+            <div class="select-lang-text-col">
+              <div class="select-lang-title-bilingual">
+                <h1 class="select-title-id">Pilih Bahasa</h1>
+                <span class="select-title-en">Choose Your Language</span>
+              </div>
+              <div class="select-lang-dec-line"></div>
+              <div class="select-lang-desc-bilingual">
+                <p class="select-desc-id">
+                  Pilih bahasa utama yang akan digunakan sebagai tampilan
+                  antarmuka BaworLingua.
+                </p>
+                <p class="select-desc-en">
+                  Select your preferred language for the BaworLingua interface.
+                </p>
+              </div>
             </div>
 
-            <!-- Curved Wave Ornament at bottom of Hero -->
-            <div class="select-hero-wave">
-                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M0 40C240 90 480 110 720 90C960 70 1200 30 1440 50V120H0V40Z" fill="#F9FAFB"/>
-                </svg>
+            <!-- Center Column: Mascot Bawor (Horizontally Centered in Hero) -->
+            <div class="select-lang-mascot-col">
+              <div class="select-mascot-wrapper">
+                <img
+                  src="assets/mascot/Bawor_Welcome.png"
+                  alt="Mascot Bawor Welcome"
+                  class="select-mascot-img-center"
+                  id="select-bawor-img"
+                />
+              </div>
             </div>
+
+            <!-- Right Column: Illustration Visual Space -->
+            <div class="select-lang-bg-space"></div>
+          </div>
         </div>
 
-        <!-- CARDS SECTION: TWO LANGUAGE SELECTION CARDS (FLAG LEFT, CONTENT RIGHT) -->
-        <div class="select-cards-container">
-            <div class="select-cards-grid">
-
-                <!-- CARD 1: BAHASA INDONESIA -->
-                <div class="lang-card lang-card-id" id="card-lang-indonesia">
-                    <div class="lang-flag-badge flag-id" aria-label="Bendera Indonesia">
-                        <svg width="40" height="28" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="36" height="26" rx="4" fill="white"/>
-                            <path d="M0 4C0 1.79086 1.79086 0 4 0H32C34.2091 0 36 1.79086 36 4V13H0V4Z" fill="#E53225"/>
-                            <rect x="0.5" y="0.5" width="35" height="25" rx="3.5" stroke="#E5E7EB"/>
-                        </svg>
-                    </div>
-                    <div class="lang-card-content">
-                        <h2 class="lang-card-title">Bahasa Indonesia</h2>
-                        <p class="lang-card-desc">Gunakan Bahasa Indonesia sebagai bahasa antarmuka utama.</p>
-                        <div class="lang-card-footer">
-                            <button class="btn-select-lang" data-lang-select="id" id="btn-select-id">
-                                Pilih Bahasa Indonesia &rarr;
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2: ENGLISH -->
-                <div class="lang-card lang-card-en" id="card-lang-english">
-                    <div class="lang-flag-badge flag-en" aria-label="English Flag">
-                        <svg width="40" height="28" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="36" height="26" rx="4" fill="#00247D"/>
-                            <path d="M0 0L36 26M36 0L0 26" stroke="white" stroke-width="4"/>
-                            <path d="M0 0L36 26M36 0L0 26" stroke="#CF142B" stroke-width="2"/>
-                            <path d="M18 0V26M0 13H36" stroke="white" stroke-width="7"/>
-                            <path d="M18 0V26M0 13H36" stroke="#CF142B" stroke-width="4"/>
-                            <rect x="0.5" y="0.5" width="35" height="25" rx="3.5" stroke="#E5E7EB"/>
-                        </svg>
-                    </div>
-                    <div class="lang-card-content">
-                        <h2 class="lang-card-title">English</h2>
-                        <p class="lang-card-desc">Use English as the primary interface language.</p>
-                        <div class="lang-card-footer">
-                            <button class="btn-select-lang" data-lang-select="en" id="btn-select-en">
-                                Choose English &rarr;
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- Curved Wave Ornament at bottom of Hero -->
+        <div class="select-hero-wave">
+          <svg
+            viewBox="0 0 1440 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0 40C240 90 480 110 720 90C960 70 1200 30 1440 50V120H0V40Z"
+              fill="#F9FAFB"
+            />
+          </svg>
         </div>
+      </div>
 
+      <!-- CARDS SECTION: TWO LANGUAGE SELECTION CARDS (FLAG LEFT, CONTENT RIGHT) -->
+      <div class="select-cards-container">
+        <div class="select-cards-grid">
+          <!-- CARD 1: BAHASA INDONESIA -->
+          <div class="lang-card lang-card-id" id="card-lang-indonesia">
+            <div class="lang-flag-badge flag-id" aria-label="Bendera Indonesia">
+              <svg
+                width="40"
+                height="28"
+                viewBox="0 0 36 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="36" height="26" rx="4" fill="white" />
+                <path
+                  d="M0 4C0 1.79086 1.79086 0 4 0H32C34.2091 0 36 1.79086 36 4V13H0V4Z"
+                  fill="#E53225"
+                />
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="35"
+                  height="25"
+                  rx="3.5"
+                  stroke="#E5E7EB"
+                />
+              </svg>
+            </div>
+            <div class="lang-card-content">
+              <h2 class="lang-card-title">Bahasa Indonesia</h2>
+              <p class="lang-card-desc">
+                Gunakan Bahasa Indonesia sebagai bahasa antarmuka utama.
+              </p>
+              <div class="lang-card-footer">
+                <button
+                  class="btn-select-lang"
+                  data-lang-select="id"
+                  id="btn-select-id"
+                >
+                  Pilih Bahasa Indonesia &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: ENGLISH -->
+          <div class="lang-card lang-card-en" id="card-lang-english">
+            <div class="lang-flag-badge flag-en" aria-label="English Flag">
+              <svg
+                width="40"
+                height="28"
+                viewBox="0 0 36 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="36" height="26" rx="4" fill="#00247D" />
+                <path
+                  d="M0 0L36 26M36 0L0 26"
+                  stroke="white"
+                  stroke-width="4"
+                />
+                <path
+                  d="M0 0L36 26M36 0L0 26"
+                  stroke="#CF142B"
+                  stroke-width="2"
+                />
+                <path d="M18 0V26M0 13H36" stroke="white" stroke-width="7" />
+                <path d="M18 0V26M0 13H36" stroke="#CF142B" stroke-width="4" />
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="35"
+                  height="25"
+                  rx="3.5"
+                  stroke="#E5E7EB"
+                />
+              </svg>
+            </div>
+            <div class="lang-card-content">
+              <h2 class="lang-card-title">English</h2>
+              <p class="lang-card-desc">
+                Use English as the primary interface language.
+              </p>
+              <div class="lang-card-footer">
+                <button
+                  class="btn-select-lang"
+                  data-lang-select="en"
+                  id="btn-select-en"
+                >
+                  Choose English &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER SECTION (REUSED FROM HOMEPAGE - COMPACT COLORED FOOTER) -->
     <footer class="compact-footer" id="main-footer">
-        <div class="footer-compact-container">
-            <div class="footer-compact-main">
-                <!-- Brand & Description -->
-                <div class="footer-compact-brand">
-                    <a href="index.html" class="compact-brand-link">
-                        <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="compact-logo">
-                        <span class="compact-brand-title">BaworLingua</span>
-                    </a>
-                    <div class="compact-brand-desc-bilingual bilingual-text">
-                        <p class="text-id">Belajar Bahasa Banyumasan dan mengenal Banyumas.</p>
-                        <p class="text-en">Learn Banyumasan Language and explore Banyumas.</p>
-                    </div>
-                </div>
-
-                <!-- Navigation (Horizontal row on desktop) -->
-                <nav class="footer-compact-nav">
-                    <a href="index.html" class="compact-nav-link">
-                        <span class="bilingual-inline">
-                            <span class="text-id">Beranda</span>
-                            <span class="text-en">Home</span>
-                        </span>
-                    </a>
-                    <a href="#" class="compact-nav-link">
-                        <span class="bilingual-inline">
-                            <span class="text-id">Belajar</span>
-                            <span class="text-en">Learn</span>
-                        </span>
-                    </a>
-                    <a href="#section-tourism" class="compact-nav-link">
-                        <span class="bilingual-inline">
-                            <span class="text-id">Wisata</span>
-                            <span class="text-en">Tourism</span>
-                        </span>
-                    </a>
-                    <a href="#section-cuisine" class="compact-nav-link">
-                        <span class="bilingual-inline">
-                            <span class="text-id">Kuliner</span>
-                            <span class="text-en">Cuisine</span>
-                        </span>
-                    </a>
-                    <a href="#" class="compact-nav-link">
-                        <span class="bilingual-inline">
-                            <span class="text-id">Terjemahan</span>
-                            <span class="text-en">Translation</span>
-                        </span>
-                    </a>
-                </nav>
+      <div class="footer-compact-container">
+        <div class="footer-compact-main">
+          <!-- Brand & Description -->
+          <div class="footer-compact-brand">
+            <a href="index.html" class="compact-brand-link">
+              <img
+                src="assets/logo/logo.png"
+                alt="Logo BaworLingua"
+                class="compact-logo"
+              />
+              <span class="compact-brand-title">BaworLingua</span>
+            </a>
+            <div class="compact-brand-desc-bilingual bilingual-text">
+              <p class="text-id">
+                Belajar Bahasa Banyumasan dan mengenal Banyumas.
+              </p>
+              <p class="text-en">
+                Learn Banyumasan Language and explore Banyumas.
+              </p>
             </div>
+          </div>
 
-            <!-- Copyright -->
-            <div class="footer-compact-copyright">
-                <div class="bilingual-text">
-                    <p class="text-id">&copy; 2026 BaworLingua. Semua hak dilindungi.</p>
-                    <p class="text-en">&copy; 2026 BaworLingua. All rights reserved.</p>
-                </div>
-            </div>
+          <!-- Navigation (Horizontal row on desktop) -->
+          <nav class="footer-compact-nav">
+            <a href="index.html" class="compact-nav-link">
+              <span class="bilingual-inline">
+                <span class="text-id">Beranda</span>
+                <span class="text-en">Home</span>
+              </span>
+            </a>
+            <a href="#" class="compact-nav-link">
+              <span class="bilingual-inline">
+                <span class="text-id">Belajar</span>
+                <span class="text-en">Learn</span>
+              </span>
+            </a>
+            <a href="#section-tourism" class="compact-nav-link">
+              <span class="bilingual-inline">
+                <span class="text-id">Wisata</span>
+                <span class="text-en">Tourism</span>
+              </span>
+            </a>
+            <a href="#section-cuisine" class="compact-nav-link">
+              <span class="bilingual-inline">
+                <span class="text-id">Kuliner</span>
+                <span class="text-en">Cuisine</span>
+              </span>
+            </a>
+            <a href="#" class="compact-nav-link">
+              <span class="bilingual-inline">
+                <span class="text-id">Terjemahan</span>
+                <span class="text-en">Translation</span>
+              </span>
+            </a>
+          </nav>
         </div>
+
+        <!-- Copyright -->
+        <div class="footer-compact-copyright">
+          <div class="bilingual-text">
+            <p class="text-id">
+              &copy; 2026 BaworLingua. Semua hak dilindungi.
+            </p>
+            <p class="text-en">&copy; 2026 BaworLingua. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
-</body>
 
+    <script>
+      document.querySelectorAll(".btn-select-lang").forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = this.getAttribute("data-lang-select");
+
+          // Simpan pilihan bahasa
+          localStorage.setItem("baworLanguage", language);
+
+          // Masuk ke halaman login
+          window.location.href = "login.html";
+        });
+      });
+    </script>
+  </body>
 </html>
