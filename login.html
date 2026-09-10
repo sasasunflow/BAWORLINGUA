@@ -2,15 +2,17 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Masuk ke BaworLingua</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/logo/logo.png" />
+    <link rel="icon" type="image/png" href="assets/logo/logo.png" />
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
@@ -23,34 +25,57 @@
   </head>
 
   <body>
-    <!-- BACKGROUND -->
+    <!-- =====================================
+         BACKGROUND
+    ====================================== -->
+
+    <div class="background-image"></div>
+
     <div class="background-overlay"></div>
 
-    <!-- LOGIN CARD -->
+    <!-- =====================================
+         LOGIN CONTAINER
+    ====================================== -->
+
     <main class="login-container">
+      <!-- =================================
+             LOGIN CARD
+        ================================== -->
+
       <div class="login-card">
-        <!-- LOGO / BRAND -->
+        <!-- ==============================
+                 BRAND
+            =============================== -->
+
         <div class="brand">
           <img
             src="assets/logo/logo.png"
-            alt="BaworLingua Logo"
+            alt="Logo BaworLingua"
             class="brand-logo"
           />
 
           <h2>Bawor<span>Lingua</span></h2>
         </div>
 
-        <!-- TITLE -->
+        <!-- ==============================
+                 TITLE
+            =============================== -->
+
         <h1 id="login-title">Masuk ke BaworLingua</h1>
 
-        <!-- FORM -->
+        <!-- ==============================
+                 LOGIN FORM
+            =============================== -->
+
         <form id="loginForm">
           <!-- EMAIL -->
+
           <div class="form-group">
             <label for="email" id="email-label"> Email </label>
 
             <div class="input-box">
               <!-- Email Icon -->
+
               <svg
                 class="input-icon"
                 viewBox="0 0 24 24"
@@ -74,6 +99,7 @@
           </div>
 
           <!-- PASSWORD -->
+
           <div class="form-group">
             <div class="password-label-row">
               <label for="password" id="password-label"> Password </label>
@@ -83,6 +109,7 @@
 
             <div class="input-box">
               <!-- Lock Icon -->
+
               <svg
                 class="input-icon"
                 viewBox="0 0 24 24"
@@ -105,7 +132,8 @@
                 required
               />
 
-              <!-- Eye Button -->
+              <!-- Password Toggle -->
+
               <button
                 type="button"
                 class="password-toggle"
@@ -129,20 +157,29 @@
             </div>
           </div>
 
-          <!-- REMEMBER ME -->
+          <!-- ==============================
+                     REMEMBER ME
+                =============================== -->
+
           <div class="remember-container">
             <input type="checkbox" id="remember" />
 
             <label for="remember" id="remember-label"> Ingat saya </label>
           </div>
 
-          <!-- LOGIN BUTTON -->
+          <!-- ==============================
+                     LOGIN BUTTON
+                =============================== -->
+
           <button type="submit" class="login-button" id="login-button">
             Masuk
           </button>
         </form>
 
-        <!-- DIVIDER -->
+        <!-- ==============================
+                 DIVIDER
+            =============================== -->
+
         <div class="divider">
           <span></span>
 
@@ -151,9 +188,13 @@
           <span></span>
         </div>
 
-        <!-- SOCIAL LOGIN -->
+        <!-- ==============================
+                 SOCIAL LOGIN
+            =============================== -->
+
         <div class="social-login">
           <!-- GOOGLE -->
+
           <button type="button" class="social-button">
             <svg class="google-icon" viewBox="0 0 24 24">
               <path
@@ -181,6 +222,7 @@
           </button>
 
           <!-- EMAIL -->
+
           <button type="button" class="social-button">
             <svg
               class="email-icon"
@@ -198,19 +240,26 @@
           </button>
         </div>
 
-        <!-- REGISTER -->
+        <!-- ==============================
+                 REGISTER
+            =============================== -->
+
         <div class="register">
           <span id="register-question"> Belum punya akun? </span>
 
           <a href="#" id="register-link">
             Daftar sekarang
+
             <span>›</span>
           </a>
         </div>
       </div>
     </main>
 
-    <!-- JAVASCRIPT -->
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
     <script src="js/login.js"></script>
   </body>
 </html>

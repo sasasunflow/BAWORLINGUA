@@ -1,5 +1,5 @@
 /* =========================================
-   BAHASA
+   DATA BAHASA
 ========================================= */
 
 const languageData = {
@@ -33,6 +33,10 @@ const languageData = {
     required: "Email dan password harus diisi.",
 
     success: "Login berhasil!",
+
+    showPassword: "Tampilkan password",
+
+    hidePassword: "Sembunyikan password",
   },
 
   en: {
@@ -65,22 +69,39 @@ const languageData = {
     required: "Email and password are required.",
 
     success: "Login successful!",
+
+    showPassword: "Show password",
+
+    hidePassword: "Hide password",
   },
 };
 
 /* =========================================
-   AMBIL BAHASA
+   AMBIL BAHASA DARI LOCAL STORAGE
 ========================================= */
 
-const selectedLanguage = localStorage.getItem("baworLanguage") || "id";
+let selectedLanguage = localStorage.getItem("baworLanguage");
+
+/*
+   Jika belum memilih bahasa,
+   gunakan Bahasa Indonesia.
+*/
+
+if (selectedLanguage !== "id" && selectedLanguage !== "en") {
+  selectedLanguage = "id";
+}
 
 const lang = languageData[selectedLanguage];
 
 /* =========================================
-   TERAPKAN BAHASA
+   SET LANGUAGE HTML
 ========================================= */
 
 document.documentElement.lang = selectedLanguage;
+
+/* =========================================
+   TERAPKAN BAHASA
+========================================= */
 
 document.title = lang.title;
 
@@ -116,15 +137,43 @@ document.getElementById("register-link").innerHTML =
    SHOW / HIDE PASSWORD
 ========================================= */
 
-const password = document.getElementById("password");
+const passwordInput = document.getElementById("password");
 
 const passwordToggle = document.getElementById("passwordToggle");
 
 passwordToggle.addEventListener("click", function () {
-  if (password.type === "password") {
-    password.type = "text";
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+
+    passwordToggle.setAttribute("aria-label", lang.hidePassword);
   } else {
-    password.type = "password";
+    passwordInput.type = "password";
+
+    passwordToggle.setAttribute("aria-label", lang.showPassword);
+  }
+});
+
+/* =========================================
+   REMEMBER ME
+========================================= */
+
+const rememberCheckbox = document.getElementById("remember");
+
+const savedEmail = localStorage.getItem("baworRememberEmail");
+
+if (savedEmail) {
+  document.getElementById("email").value = savedEmail;
+
+  rememberCheckbox.checked = true;
+}
+
+rememberCheckbox.addEventListener("change", function () {
+  const email = document.getElementById("email").value.trim();
+
+  if (this.checked && email) {
+    localStorage.setItem("baworRememberEmail", email);
+  } else {
+    localStorage.removeItem("baworRememberEmail");
   }
 });
 
@@ -139,24 +188,39 @@ loginForm.addEventListener("submit", function (event) {
 
   const email = document.getElementById("email").value.trim();
 
-  const passwordValue = document.getElementById("password").value.trim();
+  const password = document.getElementById("password").value.trim();
 
-  /* Validasi */
+  /* ===============================
+           VALIDASI
+        ================================ */
 
-  if (email === "" || passwordValue === "") {
+  if (email === "" || password === "") {
     alert(lang.required);
 
     return;
   }
 
-  /*
-            FRONTEND SAJA
+  /* ===============================
+           REMEMBER EMAIL
+        ================================ */
 
-            Nantinya bagian ini bisa
-            dihubungkan dengan PHP/MySQL,
-            Laravel, Firebase, atau backend
-            lainnya.
-        */
+  if (rememberCheckbox.checked) {
+    localStorage.setItem("baworRememberEmail", email);
+  } else {
+    localStorage.removeItem("baworRememberEmail");
+  }
+
+  /* ===============================
+           FRONTEND TEST
+        ================================ */
 
   alert(lang.success);
+
+  /*
+           Nanti bagian ini bisa
+           diarahkan ke dashboard:
+
+           window.location.href =
+               "dashboard.html";
+        */
 });
