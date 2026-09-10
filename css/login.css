@@ -74,20 +74,16 @@ body {
 
 .login-container {
   width: 100%;
-
-  min-height: 100vh;
-
-  padding: 30px;
-
+  height: 100vh;
+  min-height: 0;
+  box-sizing: border-box;
+  padding: 10px 20px;
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   position: relative;
-
   z-index: 1;
+  overflow: hidden;
 }
 
 /* =========================================
@@ -596,51 +592,85 @@ body {
 }
 
 /* =========================================
-   RESPONSIVE MOBILE
+   RESPONSIVE LAPTOP
 ========================================= */
 
-@media (max-width: 420px) {
+@media (max-height: 800px) and (min-width: 768px) {
   .login-container {
-    padding: 14px;
+    height: 100dvh;
+    min-height: 0;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .login-card {
-    padding: 28px 20px;
+    padding: 14px 30px;
+    max-height: calc(100dvh - 10px);
+    box-sizing: border-box;
+  }
+
+  /* BRAND */
+  .brand {
+    margin-bottom: 5px;
   }
 
   .brand h2 {
     font-size: 23px;
   }
 
+  /* JUDUL */
   #login-title {
     font-size: 21px;
+    margin-bottom: 12px;
+  }
+
+  /* FORM */
+  .form-group {
+    margin-bottom: 8px;
   }
 
   .form-group label {
     font-size: 14px;
+    margin-bottom: 4px;
   }
 
+  /* INPUT */
   .input-box input {
-    height: 52px;
-
+    height: 46px;
     font-size: 14px;
   }
 
-  .login-button {
-    height: 53px;
+  /* INGAT SAYA */
+  .remember {
+    margin-top: 6px;
+    margin-bottom: 9px;
+  }
 
+  /* TOMBOL LOGIN */
+  .login-button {
+    height: 48px;
     font-size: 16px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    margin: 10px 0;
   }
 
   .divider p {
     font-size: 12px;
   }
 
+  /* GOOGLE / EMAIL */
   .social-button {
+    height: 46px;
     font-size: 13px;
   }
 
+  /* REGISTER */
   .register {
     font-size: 13px;
+    margin-top: 8px;
   }
 }
