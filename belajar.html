@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bahasa Banyumasan / Learn Banyumasan - BaworLingua</title>
+    <meta name="description" content="Belajar Bahasa Banyumasan jadi mudah dan menyenangkan bersama Bawor. Learning Banyumasan is easy and fun with Bawor.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-lang="id">
+
+    <!-- NAVBAR SECTION (REUSED FROM HOMEPAGE - ACTIVE ON BELAJAR) -->
+    <header class="navbar" id="main-navbar">
+        <div class="navbar-container">
+
+            <!-- Brand Logo & Title (Left) -->
+            <a href="index.html" class="brand" id="nav-brand">
+                <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="brand-logo" id="brand-logo-img">
+                <div class="brand-info">
+                    <span class="brand-title">BaworLingua</span>
+                    <div class="brand-subtitle-bilingual bilingual-text">
+                        <span class="text-id">Sinau Basa, Jelajah Banyumas</span>
+                        <span class="text-en">Learn the Language, Explore Banyumas</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Menu Navigation (Center - Belajar is Active) -->
+            <nav id="primary-navigation">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link" id="nav-item-beranda">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Beranda</span>
+                                <span class="text-en">Home</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="belajar.html" class="nav-link active" id="nav-item-belajar">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Belajar</span>
+                                <span class="text-en">Learn</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" id="nav-item-wisata">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Wisata</span>
+                                <span class="text-en">Tourism</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kuliner.html" class="nav-link" id="nav-item-kuliner">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Kuliner</span>
+                                <span class="text-en">Culinary</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terjemahan.html" class="nav-link" id="nav-item-terjemahan">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Terjemahan</span>
+                                <span class="text-en">Translate</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons & Language Selector (Right) -->
+            <div class="nav-actions">
+                <!-- Language Dropdown Button -->
+                <div class="lang-selector" id="lang-selector-btn" role="button" aria-label="Pilih Bahasa Utama">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span id="lang-label">ID</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#" class="btn-login" id="btn-login">
+                    <span class="login-bilingual bilingual-text">
+                        <span class="text-id">Masuk</span>
+                        <span class="text-en">Login</span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- BELAJAR HERO SECTION -->
+    <main class="learn-hero-section" id="learn-hero-main">
+        <div class="learn-hero" id="learn-hero">
+            <div class="learn-hero-container">
+                <div class="learn-hero-grid">
+
+                    <!-- Left Column: Title, Subtitle, Description & Search Bar -->
+                    <div class="learn-hero-content">
+                        
+                        <!-- Hero Heading (Bilingual Hierarchy) -->
+                        <div class="learn-title-bilingual bilingual-text" id="learn-heading">
+                            <h1 class="text-id">Belajar Bahasa<br>Banyumasan</h1>
+                            <div class="text-en">Learn Banyumasan Language</div>
+                        </div>
+
+                        <!-- Hero Subtitle / Description (Bilingual) -->
+                        <div class="learn-desc-bilingual bilingual-text" id="learn-description">
+                            <p class="text-id">Belajar Bahasa Banyumasan jadi mudah dan menyenangkan bersama Bawor!</p>
+                            <p class="text-en">Learning Banyumasan is easy and fun with Bawor!</p>
+                        </div>
+
+                        <!-- Search Material Input Box -->
+                        <div class="learn-search-wrapper" id="learn-search-container">
+                            <form class="learn-search-form" onsubmit="event.preventDefault();">
+                                <div class="search-input-box">
+                                    <svg class="search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    <input type="text" class="search-input" id="learn-search-input" placeholder="Cari materi / Search lessons" aria-label="Cari Materi Belajar">
+                                </div>
+                                <button type="submit" class="btn-search-submit" id="btn-search-submit">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Cari</span>
+                                        <span class="text-en">Search</span>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column: Mascot Bawor Character -->
+                    <div class="learn-hero-mascot-col" id="learn-mascot-container">
+                        <div class="learn-mascot-wrapper">
+                            <!-- Mascot Speech Bubble -->
+                            <div class="learn-speech-bubble" id="learn-speech-bubble">
+                                <div class="bubble-bilingual bilingual-text">
+                                    <span class="text-id">Ayuh sinau basa Banyumasan!</span>
+                                    <span class="text-en">Let's learn Banyumasan!</span>
+                                </div>
+                            </div>
+                            <!-- Mascot Character Image -->
+                            <img src="assets/mascot/bawor.png" alt="Karakter Bawor Belajar" class="learn-mascot-img" id="learn-bawor-img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- LEVEL SELECTION CARDS EMBEDDED INSIDE HERO AREA (TAHAP A REVISION) -->
+                <div class="level-tabs-wrapper hero-level-tabs" id="level-tabs">
+                    <button class="level-tab-btn active" data-tab="pemula" id="tab-pemula">
+                        <span class="tab-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v8"></path>
+                                <path d="M12 10C7.5 10 4 13.5 4 18c0 1.5 1.2 2 2.5 2s2.5-.5 2.5-2c0-2 1.5-3.5 3-3.5s3 1.5 3 3.5c0 1.5 1.2 2 2.5 2s2.5-.5 2.5-2c0-4.5-3.5-8-8-8z"></path>
+                            </svg>
+                        </span>
+                        <div class="tab-title-bilingual bilingual-text">
+                            <span class="text-id">Pemula</span>
+                            <span class="text-en">Beginner</span>
+                        </div>
+                    </button>
+
+                    <button class="level-tab-btn" data-tab="menengah" id="tab-menengah">
+                        <span class="tab-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                <path d="M9 7h6"></path>
+                                <path d="M9 11h6"></path>
+                            </svg>
+                        </span>
+                        <div class="tab-title-bilingual bilingual-text">
+                            <span class="text-id">Menengah</span>
+                            <span class="text-en">Intermediate</span>
+                        </div>
+                    </button>
+
+                    <button class="level-tab-btn" data-tab="lanjut" id="tab-lanjut">
+                        <span class="tab-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"></path>
+                            </svg>
+                        </span>
+                        <div class="tab-title-bilingual bilingual-text">
+                            <span class="text-id">Lanjut</span>
+                            <span class="text-en">Advanced</span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Curved Wave Ornament at bottom of Hero -->
+            <div class="learn-hero-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <path d="M0 40C240 90 480 110 720 90C960 70 1200 30 1440 50V120H0V40Z" fill="#F9FAFB"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- LEVEL TABS & MATERIAL CARDS SECTION (TAHAP B) -->
+        <section class="learn-materials-section" id="learn-materials-section">
+            <div class="learn-materials-container">
+
+                <!-- TAB CONTENT 1: PEMULA (BEGINNER) - 6 CARDS -->
+                <div class="tab-content-panel active" id="panel-pemula">
+                    <div class="materials-cards-grid">
+                        
+                        <!-- Card 1: Kosakata Dasar -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-teal">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="kosakata-dasar">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Kosakata Dasar</h3>
+                                    <span class="text-en">Basic Vocabulary</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Kosakata dasar sehari-hari Bahasa Banyumasan.</p>
+                                    <p class="text-en">Basic daily vocabulary of Banyumasan.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-1">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Sapaan -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-amber">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="sapaan">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Sapaan</h3>
+                                    <span class="text-en">Greetings</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Ungkapan salam dan sapaan khas Banyumas.</p>
+                                    <p class="text-en">Greetings and common Banyumasan expressions.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-2">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Angka -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-blue">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="4" y1="9" x2="20" y2="9"></line>
+                                        <line x1="4" y1="15" x2="20" y2="15"></line>
+                                        <line x1="10" y1="3" x2="8" y2="21"></line>
+                                        <line x1="16" y1="3" x2="14" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="angka">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Angka</h3>
+                                    <span class="text-en">Numbers</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Pengenalan angka dan bilangan Banyumasan.</p>
+                                    <p class="text-en">Introduction to numbers and counting in Banyumasan.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-3">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Keluarga -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-rose">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="keluarga">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Keluarga</h3>
+                                    <span class="text-en">Family</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Sebutan sanak saudara dalam Bahasa Banyumasan.</p>
+                                    <p class="text-en">Terms for family members and relatives in Banyumasan.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-4">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Anggota Tubuh -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-purple">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="anggota-tubuh">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Anggota Tubuh</h3>
+                                    <span class="text-en">Body Parts</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Nama-nama anggota tubuh dalam Bahasa Banyumasan.</p>
+                                    <p class="text-en">Names of human body parts in Banyumasan.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-5">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Aktivitas Sehari-hari -->
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-emerald">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="material-card-badge">
+                                    <span class="badge-count" data-category="aktivitas-sehari-hari">0</span>
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Materi</span>
+                                        <span class="text-en">Lessons</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text">
+                                    <h3 class="text-id">Aktivitas Sehari-hari</h3>
+                                    <span class="text-en">Daily Activities</span>
+                                </div>
+                                <div class="material-desc-bilingual bilingual-text">
+                                    <p class="text-id">Kata kerja dan kegiatan sehari-hari wong Banyumas.</p>
+                                    <p class="text-en">Verbs and daily activity expressions of Banyumas people.</p>
+                                </div>
+                            </div>
+                            <div class="material-card-footer">
+                                <button class="btn-start-learn" id="btn-learn-6">
+                                    <span class="bilingual-inline">
+                                        <span class="text-id">Mulai Belajar &rarr;</span>
+                                        <span class="text-en">Start Learning &rarr;</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT 2: MENENGAH (INTERMEDIATE) -->
+                <div class="tab-content-panel" id="panel-menengah">
+                    <div class="materials-cards-grid">
+                        
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-teal">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="tata-bahasa">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Tata Bahasa</h3><span class="text-en">Grammar Rules</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Struktur kalimat dan susunan kata Bahasa Banyumasan.</p><p class="text-en">Sentence structure and grammar rules of Banyumasan.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-amber">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="percakapan-sehari-hari">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Percakapan Sehari-hari</h3><span class="text-en">Daily Conversations</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Dialog dan percakapan kontekstual dalam masyarakat.</p><p class="text-en">Contextual dialogues and daily social conversations.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-blue">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="peribahasa">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Peribahasa (Paribasan)</h3><span class="text-en">Proverbs & Sayings</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Ungkapan tradisional dan ungkapan bijak Banyumasan.</p><p class="text-en">Traditional proverbs and wise sayings of Banyumas.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-rose">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="ungkapan-sopan-santun">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Ungkapan Sopan Santun</h3><span class="text-en">Polite Expressions</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Penggunaan tingkat tutur dan etika berbahasa.</p><p class="text-en">Polite levels and respectful speech etiquette.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-purple">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="cerita-rakyat">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Cerita Rakyat</h3><span class="text-en">Folklore Stories</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Kisah legenda dan dongeng klasik Banyumas.</p><p class="text-en">Classic legends and folklore tales of Banyumas.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-emerald">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="humor-banyol">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Humor & Banyol</h3><span class="text-en">Humor & Jokes</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Candaan khas Cablaka wong Banyumas.</p><p class="text-en">Humor and humorous expressions of Cablaka culture.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- TAB CONTENT 3: LANJUT (ADVANCED) -->
+                <div class="tab-content-panel" id="panel-lanjut">
+                    <div class="materials-cards-grid">
+                        
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-teal">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="sastra-banyumasan">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Sastra Banyumasan</h3><span class="text-en">Banyumas Literature</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Karya sastra dan puisi Gagrak Banyumasan.</p><p class="text-en">Literary works and poetry of Banyumasan style.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-amber">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="dialek-daerah">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Dialek & Variasi Daerah</h3><span class="text-en">Regional Dialects</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Perbedaan dialek antar wilayah di Eks-Karesidenan.</p><p class="text-en">Dialect variations across Banyumas residency regions.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-blue">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="pidato-sesorah">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Pidato & Sesorah</h3><span class="text-en">Speeches & Public Speaking</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Teknik berpidato resmi dalam Basa Banyumasan.</p><p class="text-en">Public speaking and formal speech techniques.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-rose">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4V8z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="macapat-tembang">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Macapat & Tembang</h3><span class="text-en">Traditional Songs</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Seni tembang tradisional dan tembang macapat.</p><p class="text-en">Traditional songs and Macapat musical arts.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-purple">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="aksara-jawa">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Aksara Jawa</h3><span class="text-en">Javanese Script</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Membaca dan menulis Aksara Jawa Carakan.</p><p class="text-en">Reading and writing traditional Javanese script.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                        <div class="material-card">
+                            <div class="material-card-header">
+                                <div class="material-icon-box color-emerald">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                </div>
+                                <div class="material-card-badge"><span class="badge-count" data-category="budaya-tradisi">0</span> <span class="bilingual-inline"><span class="text-id">Materi</span><span class="text-en">Lessons</span></span></div>
+                            </div>
+                            <div class="material-card-body">
+                                <div class="material-title-bilingual bilingual-text"><h3 class="text-id">Budaya & Tradisi</h3><span class="text-en">Culture & Traditions</span></div>
+                                <div class="material-desc-bilingual bilingual-text"><p class="text-id">Adat istiadat dan nilai-nilai luhur Banyumas.</p><p class="text-en">Customs and noble cultural values of Banyumas.</p></div>
+                            </div>
+                            <div class="material-card-footer"><button class="btn-start-learn"><span class="bilingual-inline"><span class="text-id">Mulai Belajar &rarr;</span><span class="text-en">Start Learning &rarr;</span></span></button></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRACTICE BANNER SECTION (TAHAP C) -->
+        <section class="practice-banner-section" id="practice-banner-section">
+            <div class="practice-banner-container">
+                <div class="practice-banner-card">
+                    
+                    <!-- Left Side: Content & CTA Button -->
+                    <div class="practice-banner-content">
+                        <!-- Bilingual Heading -->
+                        <div class="practice-title-bilingual bilingual-text" id="practice-heading">
+                            <h2 class="text-id">Siap untuk menguji kemampuanmu?</h2>
+                            <h2 class="text-en">Ready to test your skills?</h2>
+                        </div>
+
+                        <!-- Bilingual Subheading / Description -->
+                        <div class="practice-desc-bilingual bilingual-text" id="practice-subheading">
+                            <p class="text-id">Yuk, latihan dengan mengerjakan soal Bahasa Banyumasan.</p>
+                            <p class="text-en">Practice by answering Banyumasan language questions.</p>
+                        </div>
+
+                        <!-- Bilingual CTA Button -->
+                        <div class="practice-cta-wrapper">
+                            <a href="latihan.html" class="btn-practice-cta" id="btn-start-practice">
+                                <div class="practice-btn-bilingual bilingual-text">
+                                    <span class="text-id">Mulai Latihan &rarr;</span>
+                                    <span class="text-en">Start Practice &rarr;</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Mascot Bawor Learning Companion Visual -->
+                    <div class="practice-banner-mascot" id="practice-mascot-container">
+                        <img src="assets/mascot/bawor.png" alt="Mascot Bawor Latihan" class="practice-mascot-img" id="practice-mascot-img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!-- COMPACT FOOTER (REUSED FROM HOMEPAGE - UNCHANGED) -->
+    <footer class="compact-footer" id="main-footer">
+        <div class="footer-compact-container">
+            <div class="footer-compact-main">
+                <!-- Brand & Description -->
+                <div class="footer-compact-brand">
+                    <a href="index.html" class="compact-brand-link">
+                        <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="compact-logo">
+                        <span class="compact-brand-title">BaworLingua</span>
+                    </a>
+                    <div class="compact-brand-desc-bilingual bilingual-text">
+                        <p class="text-id">Belajar Bahasa Banyumasan dan mengenal Banyumas.</p>
+                        <p class="text-en">Learn Banyumasan Language and explore Banyumas.</p>
+                    </div>
+                </div>
+
+                <!-- Navigation (Horizontal row on desktop) -->
+                <nav class="footer-compact-nav">
+                    <a href="index.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Beranda</span>
+                            <span class="text-en">Home</span>
+                        </span>
+                    </a>
+                    <a href="belajar.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Belajar</span>
+                            <span class="text-en">Learn</span>
+                        </span>
+                    </a>
+                    <a href="index.html#section-tourism" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Wisata</span>
+                            <span class="text-en">Tourism</span>
+                        </span>
+                    </a>
+                    <a href="kuliner.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Kuliner</span>
+                            <span class="text-en">Cuisine</span>
+                        </span>
+                    </a>
+                    <a href="#" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Terjemahan</span>
+                            <span class="text-en">Translation</span>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-compact-copyright">
+                <div class="bilingual-text">
+                    <p class="text-id">&copy; 2026 BaworLingua. Semua hak dilindungi.</p>
+                    <p class="text-en">&copy; 2026 BaworLingua. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

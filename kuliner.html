@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Banyumas / Banyumas Cuisine - BaworLingua</title>
+    <meta name="description"
+        content="Jelajahi berbagai kuliner khas Banyumas yang lezat dan menggugah selera bersama BaworLingua.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-lang="id">
+
+    <!-- NAVBAR SECTION (REUSED FROM HOMEPAGE - ACTIVE ON KULINER) -->
+    <header class="navbar" id="main-navbar">
+        <div class="navbar-container">
+
+            <!-- Brand Logo & Title (Left) -->
+            <a href="index.html" class="brand" id="nav-brand">
+                <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="brand-logo" id="brand-logo-img">
+                <div class="brand-info">
+                    <span class="brand-title">BaworLingua</span>
+                    <div class="brand-subtitle-bilingual bilingual-text">
+                        <span class="text-id">Sinau Basa, Jelajah Banyumas</span>
+                        <span class="text-en">Learn the Language, Explore Banyumas</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Menu Navigation (Center - Kuliner is Active) -->
+            <nav id="primary-navigation">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link" id="nav-item-beranda">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Beranda</span>
+                                <span class="text-en">Home</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="belajar.html" class="nav-link" id="nav-item-belajar">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Belajar</span>
+                                <span class="text-en">Learn</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" id="nav-item-wisata">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Wisata</span>
+                                <span class="text-en">Tourism</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kuliner.html" class="nav-link active" id="nav-item-kuliner">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Kuliner</span>
+                                <span class="text-en">Culinary</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terjemahan.html" class="nav-link" id="nav-item-terjemahan">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Terjemahan</span>
+                                <span class="text-en">Translate</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons & Language Selector (Right) -->
+            <div class="nav-actions">
+                <!-- Language Dropdown Button -->
+                <div class="lang-selector" id="lang-selector-btn" role="button" aria-label="Pilih Bahasa Utama">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                    <span id="lang-label">ID</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Login Button -->
+                <a href="#" class="btn-login" id="btn-login">
+                    <span class="login-bilingual bilingual-text">
+                        <span class="text-id">Masuk</span>
+                        <span class="text-en">Login</span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO HALAMAN KULINER (TAHAP A) -->
+    <main class="kuliner-hero-section" id="kuliner-hero-main">
+        <div class="kuliner-hero-container">
+
+            <!-- Hero Text Content (Left) -->
+            <div class="kuliner-hero-content">
+
+
+                <!-- Judul Utama Bilingual -->
+                <div class="kuliner-title-bilingual bilingual-text" id="kuliner-main-title">
+                    <h1 class="text-id">Kuliner Banyumas</h1>
+                    <h1 class="text-en">Banyumas Cuisine</h1>
+                </div>
+
+                <!-- Subtitle Bilingual -->
+                <div class="kuliner-subtitle-bilingual bilingual-text" id="kuliner-subtitle">
+                    <h2 class="text-id">Rasakan Cita Rasa Khas Banyumas</h2>
+                    <h2 class="text-en">Savor the Authentic Flavors of Banyumas</h2>
+                </div>
+
+                <!-- Deskripsi Bilingual -->
+                <div class="kuliner-desc-bilingual bilingual-text" id="kuliner-desc">
+                    <p class="text-id">Jelajahi berbagai kuliner khas Banyumas yang lezat dan menggugah selera.</p>
+                    <p class="text-en">Explore and enjoy the authentic flavors of Banyumas.</p>
+                </div>
+
+            </div>
+
+            <!-- Visual Bawor & Kartu (Right) -->
+            <div class="kuliner-mascot-wrapper" id="kuliner-mascot-container">
+                <!-- Speech Bubble Card (Matching reference screenshot) -->
+                <div class="speech-bubble kuliner-speech-bubble" id="kuliner-speech-bubble">
+                    <div class="bubble-bilingual-content bilingual-text">
+                        <div class="text-id bubble-lang-block">
+                            <span class="bubble-title-primary">Monggo dipun rahapi!</span>
+                            <span class="bubble-subtitle-secondary">Selamat menikmati kuliner Banyumas!</span>
+                        </div>
+                        <div class="text-en bubble-lang-block">
+                            <span class="bubble-title-primary">Enjoy Banyumas Cuisine!</span>
+                            <span class="bubble-subtitle-secondary">Monggo dipun rahapi!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mascot Image -->
+                <div class="kuliner-mascot-img-container">
+                    <img src="assets/mascot/bawor.png" alt="Mascot Bawor Visual" class="kuliner-mascot-img">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SECTION KULINER (TAHAP B: SEARCH, FILTER, SORTING & CARD KULINER) -->
+    <section class="kuliner-main-section" id="kuliner-main-section">
+        <div class="kuliner-main-container">
+
+            <!-- Toolbar (Search, Filter Kategori, Sorting) -->
+            <div class="kuliner-toolbar" id="kuliner-toolbar">
+
+                <!-- 1. Search Bar -->
+                <div class="kuliner-search-wrapper" id="kuliner-search-wrapper">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="kuliner-search-input" class="kuliner-search-input"
+                        placeholder="Cari kuliner Banyumas..." aria-label="Cari kuliner Banyumas">
+                    <button type="button" id="kuliner-search-clear" class="search-clear-btn" aria-label="Hapus pencarian"
+                        style="display: none;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- 2. Filter Kategori -->
+                <div class="kuliner-category-filters" id="kuliner-category-filters" role="tablist"
+                    aria-label="Filter Kategori Kuliner">
+                    <button type="button" class="filter-chip active" data-category="semua" id="filter-chip-semua">
+                        <span class="bilingual-text">
+                            <span class="text-id">Semua</span>
+                            <span class="text-en">All</span>
+                        </span>
+                    </button>
+                    <button type="button" class="filter-chip" data-category="makanan" id="filter-chip-makanan">
+                        <span class="bilingual-text">
+                            <span class="text-id">Makanan</span>
+                            <span class="text-en">Food</span>
+                        </span>
+                    </button>
+                    <button type="button" class="filter-chip" data-category="minuman" id="filter-chip-minuman">
+                        <span class="bilingual-text">
+                            <span class="text-id">Minuman</span>
+                            <span class="text-en">Drinks</span>
+                        </span>
+                    </button>
+                    <button type="button" class="filter-chip" data-category="jajanan" id="filter-chip-jajanan">
+                        <span class="bilingual-text">
+                            <span class="text-id">Jajanan</span>
+                            <span class="text-en">Snacks</span>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- 3. Sorting Options -->
+                <div class="kuliner-sort-wrapper" id="kuliner-sort-wrapper">
+                    <label for="kuliner-sort-select" class="sort-label">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18M6 12h12M9 18h6" />
+                        </svg>
+                        <span class="bilingual-text">
+                            <span class="text-id">Urutkan:</span>
+                            <span class="text-en">Sort:</span>
+                        </span>
+                    </label>
+                    <select id="kuliner-sort-select" class="kuliner-sort-select" aria-label="Urutkan Kuliner">
+                        <option value="terbaru" id="opt-terbaru">Terbaru</option>
+                        <option value="terlama" id="opt-terlama">Terlama</option>
+                        <option value="rating" id="opt-rating">Rating Tertinggi</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- 4. Heading Section Kuliner -->
+            <div class="kuliner-section-header" id="kuliner-section-header">
+                <div class="kuliner-heading-bilingual bilingual-text" id="kuliner-section-heading">
+                    <h2 class="text-id">Kuliner Populer</h2>
+                    <h2 class="text-en">Popular Cuisine</h2>
+                </div>
+            </div>
+
+            <!-- 5. Card Kuliner Grid & Empty State Container -->
+            <div id="kuliner-cards-grid" class="kuliner-cards-grid" aria-live="polite">
+                <!-- Cards / Empty State populated dynamically by JavaScript from Database -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION KEUNGGULAN KULINER LOKAL (TAHAP C) -->
+    <section class="kuliner-features-section" id="kuliner-features-section">
+        <div class="kuliner-features-container">
+
+            <!-- Section Heading -->
+            <div class="kuliner-features-header" id="kuliner-features-header">
+                <div class="features-heading-bilingual bilingual-text" id="features-main-heading">
+                    <h2 class="text-id">Keunggulan Kuliner Lokal</h2>
+                    <h2 class="text-en">The Uniqueness of Local Cuisine</h2>
+                </div>
+            </div>
+
+            <!-- Features Cards Grid (3 Cards Desktop, 2 Tablet, 1 Mobile) -->
+            <div class="kuliner-features-grid" id="kuliner-features-grid">
+
+                <!-- Feature 1: Cita Rasa Khas -->
+                <div class="feature-card" id="feature-card-1">
+                    <div class="feature-icon-wrapper icon-primary">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-card-content">
+                        <div class="feature-title-bilingual bilingual-text">
+                            <h3 class="feature-title text-id">Cita Rasa Khas</h3>
+                            <h3 class="feature-title text-en">Distinctive Flavor</h3>
+                        </div>
+                        <div class="feature-desc-bilingual bilingual-text">
+                            <p class="text-id">Memiliki cita rasa khas Banyumas yang menjadi bagian dari kekayaan kuliner daerah.</p>
+                            <p class="text-en">Distinctive Banyumas flavors that represent the region's culinary richness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Warisan Lokal -->
+                <div class="feature-card" id="feature-card-2">
+                    <div class="feature-icon-wrapper icon-culture">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="feature-card-content">
+                        <div class="feature-title-bilingual bilingual-text">
+                            <h3 class="feature-title text-id">Warisan Lokal</h3>
+                            <h3 class="feature-title text-en">Local Heritage</h3>
+                        </div>
+                        <div class="feature-desc-bilingual bilingual-text">
+                            <p class="text-id">Kuliner yang diwariskan dan dikenal sebagai bagian dari kehidupan masyarakat Banyumas.</p>
+                            <p class="text-en">Cuisine passed down through generations and closely connected to Banyumas communities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Beragam Pilihan -->
+                <div class="feature-card" id="feature-card-3">
+                    <div class="feature-icon-wrapper icon-warm">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12h8M12 8v8"/>
+                        </svg>
+                    </div>
+                    <div class="feature-card-content">
+                        <div class="feature-title-bilingual bilingual-text">
+                            <h3 class="feature-title text-id">Beragam Pilihan</h3>
+                            <h3 class="feature-title text-en">Diverse Variety</h3>
+                        </div>
+                        <div class="feature-desc-bilingual bilingual-text">
+                            <p class="text-id">Beragam makanan, minuman, dan jajanan khas yang dapat dinikmati.</p>
+                            <p class="text-en">A variety of local foods, drinks, and snacks to enjoy.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPACT FOOTER (REUSED FROM HOMEPAGE) -->
+    <footer class="compact-footer" id="main-footer">
+        <div class="footer-compact-container">
+            <div class="footer-compact-main">
+                <!-- Brand & Description -->
+                <div class="footer-compact-brand">
+                    <a href="index.html" class="compact-brand-link">
+                        <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="compact-logo">
+                        <span class="compact-brand-title">BaworLingua</span>
+                    </a>
+                    <div class="compact-brand-desc-bilingual bilingual-text">
+                        <p class="text-id">Belajar Bahasa Banyumasan dan mengenal Banyumas.</p>
+                        <p class="text-en">Learn Banyumasan Language and explore Banyumas.</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="footer-compact-nav">
+                    <a href="index.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Beranda</span>
+                            <span class="text-en">Home</span>
+                        </span>
+                    </a>
+                    <a href="belajar.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Belajar</span>
+                            <span class="text-en">Learn</span>
+                        </span>
+                    </a>
+                    <a href="#" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Wisata</span>
+                            <span class="text-en">Tourism</span>
+                        </span>
+                    </a>
+                    <a href="kuliner.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Kuliner</span>
+                            <span class="text-en">Cuisine</span>
+                        </span>
+                    </a>
+                    <a href="#" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Terjemahan</span>
+                            <span class="text-en">Translation</span>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-compact-copyright">
+                <div class="bilingual-text">
+                    <p class="text-id">&copy; 2026 BaworLingua. Semua hak dilindungi.</p>
+                    <p class="text-en">&copy; 2026 BaworLingua. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

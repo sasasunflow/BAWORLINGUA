@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terjemahan Bahasa Banyumasan / Banyumasan Translation - BaworLingua</title>
+    <meta name="description"
+        content="Terjemahkan Bahasa Indonesia ke Bahasa Banyumasan atau sebaliknya secara instan bersama BaworLingua.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-lang="id">
+
+    <!-- NAVBAR SECTION (REUSED FROM HOMEPAGE - ACTIVE ON TERJEMAHAN) -->
+    <header class="navbar" id="main-navbar">
+        <div class="navbar-container">
+
+            <!-- Brand Logo & Title (Left) -->
+            <a href="index.html" class="brand" id="nav-brand">
+                <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="brand-logo" id="brand-logo-img">
+                <div class="brand-info">
+                    <span class="brand-title">BaworLingua</span>
+                    <div class="brand-subtitle-bilingual bilingual-text">
+                        <span class="text-id">Sinau Basa, Jelajah Banyumas</span>
+                        <span class="text-en">Learn the Language, Explore Banyumas</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Menu Navigation (Center - Terjemahan is Active) -->
+            <nav id="primary-navigation">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link" id="nav-item-beranda">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Beranda</span>
+                                <span class="text-en">Home</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="belajar.html" class="nav-link" id="nav-item-belajar">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Belajar</span>
+                                <span class="text-en">Learn</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" id="nav-item-wisata">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Wisata</span>
+                                <span class="text-en">Tourism</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="kuliner.html" class="nav-link" id="nav-item-kuliner">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Kuliner</span>
+                                <span class="text-en">Culinary</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="terjemahan.html" class="nav-link active" id="nav-item-terjemahan">
+                            <span class="nav-bilingual bilingual-text">
+                                <span class="text-id">Terjemahan</span>
+                                <span class="text-en">Translate</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Action Buttons & Language Selector (Right) -->
+            <div class="nav-actions">
+                <!-- Language Dropdown Button -->
+                <div class="lang-selector" id="lang-selector-btn" role="button" aria-label="Pilih Bahasa Utama">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                    <span id="lang-label">ID</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+
+                <!-- Login / Profile Button -->
+                <a href="#" class="btn-login" id="btn-login">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="login-bilingual bilingual-text">
+                        <span class="text-id">Profil</span>
+                        <span class="text-en">Profile</span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- HERO HALAMAN TERJEMAHAN (STAGE A) -->
+    <main class="translation-hero-section" id="translation-hero-main">
+        <div class="translation-hero-container">
+
+            <!-- Hero Text Content (Left) -->
+            <div class="translation-hero-content">
+
+                <!-- Title Bilingual -->
+                <div class="translation-title-bilingual bilingual-text" id="translation-main-title">
+                    <h1 class="text-id">Terjemahan<br>Bahasa <span>Banyumasan</span></h1>
+                    <h1 class="text-en">Banyumasan<br><span>Language Translation</span></h1>
+                </div>
+
+                <!-- Subtitle Bilingual -->
+                <div class="translation-subtitle-bilingual bilingual-text" id="translation-subtitle">
+                    <h2 class="text-id">Terjemahkan kata atau kalimat dengan mudah</h2>
+                    <h2 class="text-en">Translate words or sentences easily</h2>
+                </div>
+
+                <!-- Description Bilingual -->
+                <div class="translation-desc-bilingual bilingual-text" id="translation-desc">
+                    <p class="text-id">Jelajahi kekayaan Bahasa Banyumasan dengan menerjemahkan ke Bahasa Indonesia atau sebaliknya secara instan.</p>
+                    <p class="text-en">Explore the richness of the Banyumasan language by translating to Indonesian or vice versa instantly.</p>
+                </div>
+
+            </div>
+
+            <!-- Visual Bawor & Speech Bubble (Center/Right) -->
+            <div class="translation-mascot-wrapper" id="translation-mascot-container">
+                <!-- Speech Bubble Card -->
+                <div class="speech-bubble translation-speech-bubble" id="translation-speech-bubble">
+                    <div class="bubble-bilingual-content bilingual-text">
+                        <div class="text-id bubble-lang-block">
+                            <span class="bubble-title-primary">Sugeng rawuh!</span>
+                            <span class="bubble-subtitle-secondary">Ayo nerjemahake bebarengan karo Bawor!</span>
+                        </div>
+                        <div class="text-en bubble-lang-block">
+                            <span class="bubble-title-primary">Sugeng rawuh!</span>
+                            <span class="bubble-subtitle-secondary">Let's translate together with Bawor!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mascot Image -->
+                <div class="translation-mascot-img-container">
+                    <img src="assets/mascot/bawor.png" alt="Karakter Bawor - Mascot BaworLingua" class="translation-mascot-img" id="translation-mascot-img">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- TRANSLATION MAIN SECTION & WORKSPACE GRID (STAGE B) -->
+    <section class="translation-main-section" id="translation-main-section">
+        <div class="translation-main-container">
+
+            <!-- WORKSPACE GRID (Editor Card Left + Contoh Terjemahan Right) -->
+            <div class="translation-workspace-grid" id="translation-workspace-grid">
+
+                <!-- 1. EDITOR CARD (Left Main Panel) -->
+                <div class="translation-editor-card" id="translation-editor-card">
+
+                    <!-- INPUT PANEL (Dari / From) -->
+                    <div class="trans-panel trans-panel-input">
+                        <div class="panel-header">
+                            <label for="lang-from-select" class="panel-label">
+                                <span class="bilingual-text">
+                                    <span class="text-id">Dari</span>
+                                    <span class="text-en">From</span>
+                                </span>
+                            </label>
+                            <div class="custom-select-wrapper">
+                                <select id="lang-from-select" class="lang-select-dropdown" aria-label="Bahasa Asal">
+                                    <option value="id">Bahasa Indonesia</option>
+                                    <option value="bny">Bahasa Banyumasan</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <textarea id="trans-input-text" class="trans-textarea"
+                                placeholder="Ketik atau tempel teks di sini..." maxlength="500"
+                                aria-label="Input teks terjemahan"></textarea>
+                        </div>
+                        <div class="panel-footer">
+                            <span class="char-counter" id="char-counter">0 / 500</span>
+                            <button type="button" class="btn-panel-action" id="btn-copy-input" title="Salin Teks" aria-label="Salin Teks Input">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- SWAP BUTTON (Center Circular Button) -->
+                    <div class="swap-btn-container">
+                        <button type="button" class="swap-lang-btn" id="btn-swap-lang" title="Tukar Bahasa" aria-label="Tukar Bahasa">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8v12M17 20l4-4M17 20l-4-4" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- OUTPUT PANEL (Ke / To) -->
+                    <div class="trans-panel trans-panel-output">
+                        <div class="panel-header">
+                            <label for="lang-to-select" class="panel-label">
+                                <span class="bilingual-text">
+                                    <span class="text-id">Ke</span>
+                                    <span class="text-en">To</span>
+                                </span>
+                            </label>
+                            <div class="custom-select-wrapper">
+                                <select id="lang-to-select" class="lang-select-dropdown" aria-label="Bahasa Tujuan">
+                                    <option value="bny">Bahasa Banyumasan</option>
+                                    <option value="id">Bahasa Indonesia</option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <textarea id="trans-output-text" class="trans-textarea"
+                                placeholder="Hasil terjemahan akan muncul di sini..." readonly
+                                aria-label="Hasil terjemahan"></textarea>
+                        </div>
+                        <div class="panel-footer panel-footer-right">
+                            <div class="output-actions">
+                                <button type="button" class="btn-panel-action" id="btn-copy-output" title="Salin Terjemahan" aria-label="Salin Hasil Terjemahan">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-panel-action" id="btn-audio-output" title="Dengarkan Pengucapan" aria-label="Dengarkan Pengucapan">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-panel-action" id="btn-share-output" title="Bagikan Terjemahan" aria-label="Bagikan Terjemahan">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2. CONTOH TERJEMAHAN PANEL (Right Side Card) -->
+                <div class="example-trans-card" id="example-trans-card">
+                    <div class="example-card-header">
+                        <div class="example-title-bilingual bilingual-text">
+                            <h3 class="text-id">Contoh Terjemahan</h3>
+                            <h3 class="text-en">Translation Examples</h3>
+                        </div>
+                    </div>
+                    <ul class="example-trans-list" id="example-trans-list">
+
+                        <li class="example-item">
+                            <div class="example-text-block">
+                                <span class="ex-bny">Inyong arep lunga.</span>
+                                <span class="ex-target bilingual-text">
+                                    <span class="text-id">Saya mau pergi.</span>
+                                    <span class="text-en">I want to go.</span>
+                                </span>
+                            </div>
+                            <button type="button" class="btn-example-audio" title="Putar Suara" aria-label="Putar Suara Inyong arep lunga">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="example-item">
+                            <div class="example-text-block">
+                                <span class="ex-bny">Sugeng rawuh</span>
+                                <span class="ex-target bilingual-text">
+                                    <span class="text-id">Selamat datang</span>
+                                    <span class="text-en">Welcome</span>
+                                </span>
+                            </div>
+                            <button type="button" class="btn-example-audio" title="Putar Suara" aria-label="Putar Suara Sugeng rawuh">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="example-item">
+                            <div class="example-text-block">
+                                <span class="ex-bny">Matur nuwun</span>
+                                <span class="ex-target bilingual-text">
+                                    <span class="text-id">Terima kasih</span>
+                                    <span class="text-en">Thank you</span>
+                                </span>
+                            </div>
+                            <button type="button" class="btn-example-audio" title="Putar Suara" aria-label="Putar Suara Matur nuwun">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="example-item">
+                            <div class="example-text-block">
+                                <span class="ex-bny">Kulo nuwun</span>
+                                <span class="ex-target bilingual-text">
+                                    <span class="text-id">Permisi</span>
+                                    <span class="text-en">Excuse me</span>
+                                </span>
+                            </div>
+                            <button type="button" class="btn-example-audio" title="Putar Suara" aria-label="Putar Suara Kulo nuwun">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="example-item">
+                            <div class="example-text-block">
+                                <span class="ex-bny">Piye kabare?</span>
+                                <span class="ex-target bilingual-text">
+                                    <span class="text-id">Apa kabar?</span>
+                                    <span class="text-en">How are you?</span>
+                                </span>
+                            </div>
+                            <button type="button" class="btn-example-audio" title="Putar Suara" aria-label="Putar Suara Piye kabare">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                </svg>
+                            </button>
+                        </li>
+
+                    </ul>
+                    <div class="example-card-footer">
+                        <a href="belajar.html" class="btn-see-more-examples" id="btn-see-more-examples">
+                            <span class="bilingual-inline">
+                                <span class="text-id">Lihat Lainnya &rarr;</span>
+                                <span class="text-en">See More &rarr;</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TIPS & GUIDE BANNERS ROW (STAGE B) -->
+            <div class="translation-tips-row" id="translation-tips-row">
+
+                <!-- Tips Banner (Left) -->
+                <div class="tips-banner-card" id="tips-banner-card">
+                    <div class="tips-mascot-head-container">
+                        <img src="assets/mascot/bawor.png" alt="Bawor Head" class="tips-bawor-head">
+                    </div>
+                    <div class="tips-icon-badge">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8.5 14.5A6 6 0 1 1 15.5 14.5L14 16H10L8.5 14.5z"></path>
+                            <path d="M10 20h4"></path>
+                            <path d="M10 18h4"></path>
+                        </svg>
+                    </div>
+                    <div class="tips-content-text">
+                        <div class="tips-title-bilingual bilingual-text">
+                            <h4 class="text-id">Tips Penggunaan</h4>
+                            <h4 class="text-en">Usage Tips</h4>
+                        </div>
+                        <div class="tips-desc-bilingual bilingual-text">
+                            <p class="text-id">Gunakan bahasa yang santun dan jelas untuk hasil terjemahan yang lebih akurat.</p>
+                            <p class="text-en">Use polite and clear language for more accurate translation results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide Banner (Right) -->
+                <a href="belajar.html" class="guide-banner-card" id="guide-banner-card">
+                    <div class="guide-icon-badge">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="guide-content-text">
+                        <div class="guide-title-bilingual bilingual-text">
+                            <h4 class="text-id">Panduan Bahasa Banyumasan</h4>
+                            <h4 class="text-en">Banyumasan Language Guide</h4>
+                        </div>
+                        <div class="guide-desc-bilingual bilingual-text">
+                            <p class="text-id">Pelajari kosakata dan frasa penting Bahasa Banyumasan.</p>
+                            <p class="text-en">Learn essential vocabulary and phrases of Banyumasan language.</p>
+                        </div>
+                    </div>
+                    <div class="guide-arrow-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPACT FOOTER (REUSED FROM HOMEPAGE) -->
+    <footer class="compact-footer" id="main-footer">
+        <div class="footer-compact-container">
+            <div class="footer-compact-main">
+                <!-- Brand & Description -->
+                <div class="footer-compact-brand">
+                    <a href="index.html" class="compact-brand-link">
+                        <img src="assets/logo/logo.png" alt="Logo BaworLingua" class="compact-logo">
+                        <span class="compact-brand-title">BaworLingua</span>
+                    </a>
+                    <div class="compact-brand-desc-bilingual bilingual-text">
+                        <p class="text-id">Belajar Bahasa Banyumasan dan mengenal Banyumas.</p>
+                        <p class="text-en">Learn Banyumasan Language and explore Banyumas.</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="footer-compact-nav">
+                    <a href="index.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Beranda</span>
+                            <span class="text-en">Home</span>
+                        </span>
+                    </a>
+                    <a href="belajar.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Belajar</span>
+                            <span class="text-en">Learn</span>
+                        </span>
+                    </a>
+                    <a href="#" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Wisata</span>
+                            <span class="text-en">Tourism</span>
+                        </span>
+                    </a>
+                    <a href="kuliner.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Kuliner</span>
+                            <span class="text-en">Cuisine</span>
+                        </span>
+                    </a>
+                    <a href="terjemahan.html" class="compact-nav-link">
+                        <span class="bilingual-inline">
+                            <span class="text-id">Terjemahan</span>
+                            <span class="text-en">Translation</span>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-compact-copyright">
+                <div class="bilingual-text">
+                    <p class="text-id">&copy; 2026 BaworLingua. Semua hak dilindungi.</p>
+                    <p class="text-en">&copy; 2026 BaworLingua. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
